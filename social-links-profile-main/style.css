@@ -1,0 +1,41 @@
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: hsl(0, 0%, 8%);
+    font-family:inter ;
+    box-sizing: border-box;
+    margin: 0;
+    color: white;
+}
+*{
+    margin: 0;
+}
+
+p {
+    font-size: 14px;
+}
+
+
+.container {
+    background-color: hsl(0, 0%, 12%);
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 350px;
+    
+}
+.links {
+    display: flex;
+    flex-direction: column;
+}
+img {
+    border-radius: 50%;
+    width: 45%;
+}
+
+.name {
+    margin: 5px;
+}
