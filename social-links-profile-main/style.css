@@ -70,8 +70,13 @@ img {
     color: hsl(0, 0%, 20%);
     transition: 0.5s;
 }
-
-
+.attribution{
+    position: absolute;
+    bottom: 10px; 
+    font-size: 11px;
+    text-align: center;
+    color: white;
+}
 @media (max-width: 370px) {
 
 
@@ -86,7 +91,8 @@ img {
     .name {
             font-size: 18pt;
     }
-    .links > a {
+    
+.links > a {
             width: 100%;
             font-size: 14px;
         }
