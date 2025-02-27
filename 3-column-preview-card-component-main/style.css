@@ -2,12 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Lexend+Deca:wght@100..900&family=Outfit:wght@700&display=swap');
 body {
     font-family: lexend deca;
+    height: 100%;
 }
 main {
-    height: 95vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 .container {
     display: flex;
@@ -22,31 +24,38 @@ p{
     color: white;
     font-family: Lexend Deca;
     font-size: 15px;
-    margin-bottom: 60px;
+    margin-bottom: 90px;
 }
+
+/*Card Style*/
+
 .card {
-    width: 180px;
+    width: 185px;
     padding: 60px;
+    text-align: left;
 }
 .sedans {
     background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 .suvs {
     background-color: hsl(184, 100%, 22%);
 }
 .luxury {
     background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
-.btn {
+
+/*Button Style*/
+
+.btn{
     background-color: white;
     padding: 15px 30px;
     border-radius: 50px;
     text-decoration: none;
-}
-.btn:active {
-    background-color: transparent;
-    border: 2px solid white;
-    color: white;
+    text-wrap: nowrap;
 }
 
 .sedans .btn {
@@ -59,11 +68,60 @@ p{
     color: hsl(179, 100%, 13%)
 }
 
-.card.sedans {
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+.btn:active {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
 }
-.card.luxury {
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
+
+/*Media Queries*/
+@media (max-width: 768px) { 
+    main {
+        min-height: 100vh; 
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center
+    }
+    .container {
+        display: flex;
+        flex-direction: column; 
+        width: 100%;
+        max-width: 400px; 
+        align-items: center;
+        
+    }
+
+    .card {
+        width: 50%;
+        border-radius: 0;
+        padding: 40px;
+    }
+
+    .sedans {
+        border-radius: 10px 10px 0 0;
+    }
+
+    .luxury {
+        border-radius: 0 0 10px 10px;
+    }
+}
+
+@media (max-width: 360px) { 
+    .card {
+        width: 50%;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    p {
+        font-size: 14px;
+        margin-bottom: 50px;
+    }
+
+    .btn {
+        padding: 10px 20px;
+    }
 }
