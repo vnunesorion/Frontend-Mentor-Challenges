@@ -34,4 +34,4 @@ Em telas grandes, os cards ficam alinhados lado a lado.
 Em telas menores (≤ 768px), os cards são empilhados verticalmente.
 
 ## 📷 Captura de Tela
-![Responsive Car Rental Cards](/images/screenshot.png)
+![Responsive Car Rental Cards](./images/screenshot.png)
