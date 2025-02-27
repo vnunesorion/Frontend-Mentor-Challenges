@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Outfit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Lexend+Deca:wght@100..900&family=Outfit:wght@700&display=swap');
+body {
+    font-family: lexend deca;
+}
+main {
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    display: flex;
+}
+h2{
+    font-family: Big Shoulders Display;
+    font-weight: 700;
+    font-size: 40px;
+    color: white;
+}
+p{
+    color: white;
+    font-family: Lexend Deca;
+    font-size: 15px;
+    margin-bottom: 60px;
+}
+.card {
+    width: 180px;
+    padding: 60px;
+}
+.sedans {
+    background-color: hsl(31, 77%, 52%);
+}
+.suvs {
+    background-color: hsl(184, 100%, 22%);
+}
+.luxury {
+    background-color: hsl(179, 100%, 13%);
+}
+.btn {
+    background-color: white;
+    padding: 15px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+}
+.btn:active {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+}
+
+.sedans .btn {
+    color:hsl(31, 77%, 52%);
+}
+.suvs .btn {
+    color:hsl(184, 100%, 22%);
+}
+.luxury .btn {
+    color: hsl(179, 100%, 13%)
+}
+
+.card.sedans {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.card.luxury {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
